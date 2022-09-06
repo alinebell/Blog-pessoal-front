@@ -32,12 +32,14 @@ export class RegisterComponent implements OnInit {
   }
 
   cadastrar(){
+    this.user.tipo = this.tipoUsuario  
+
     if(this.user.senha != this.confirmarSenha){
         alert("As senhas não estão iguais!")
     }else this.authService.cadastrar(this.user).subscribe((resp: User) =>{
       this.user = resp
-      this.router.navigate(['/login'])
       alert("Usuário cadastrado com sucesso!")
+      this.router.navigate(['/login'])
     })  
   }
 
