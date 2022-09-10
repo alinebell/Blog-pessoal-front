@@ -8,3 +8,27 @@
     background-size: cover;
 }
 
+.principal{
+    background-image: url("https://images5.alphacoders.com/432/thumb-1920-432766.jpg");
+}
+
+.formulario{
+    max-width: 500px;
+    min-height: auto;
+    background-color: rgba(236, 225, 225, 0.528);
+
+    border-radius: 15px;
+    box-shadow: 1px 10px 20px rgb(23, 22, 22);
+}
+
+.form-group{
+
+}
+
+button{
+
+}
+
+#img-bg-esquerda{
+    
+}
