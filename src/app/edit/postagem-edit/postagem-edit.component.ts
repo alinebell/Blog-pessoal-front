@@ -14,7 +14,6 @@ import { environment } from 'src/environments/environment.prod';
 export class PostagemEditComponent implements OnInit {
 
   postagem: Postagem = new Postagem()
-
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
@@ -27,11 +26,14 @@ export class PostagemEditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
+
     if(environment.token == ''){
       this.router.navigate(['/login'])
     }
     let id = this.route.snapshot.params['id']
     this.findByIdPostagem(id)
+    this.findAllTemas()
     
   }
 
