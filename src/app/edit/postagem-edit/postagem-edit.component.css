@@ -1,0 +1,8 @@
+.formulario{
+    max-width: 500px;
+    min-height: auto;
+    background-color: rgba(236, 225, 225, 0.528);
+
+    border-radius: 15px;
+    box-shadow: 1px 10px 20px rgb(23, 22, 22);
+}
