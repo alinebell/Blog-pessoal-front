@@ -11,3 +11,12 @@
 .principal{
     background-image: url("https://i.pinimg.com/originals/fe/a1/c3/fea1c3a5e68cc6dbeb6fc40aced9cf4d.jpg");
 }
+
+.formulario{
+    max-width: 500px;
+    min-height: auto;
+    background-color: rgba(236, 225, 225, 0.528);
+
+    border-radius: 15px;
+    box-shadow: 1px 10px 20px rgb(23, 22, 22);
+}
