@@ -20,19 +20,19 @@ export class PostagemService {
   }
 
   getByIdPostagem(id: number): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://alineblogg.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.get<Postagem>(`https://brogue.onrender.com/postagens/${id}`, this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>('https://alineblogg.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://brogue.onrender.com/postagens', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>('https://alineblogg.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<Postagem>('https://brogue.onrender.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number){
-    return this.http.delete(`https://alineblogg.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(`https://brogue.onrender.com/postagens/${id}`, this.token)
   }
 
 }
