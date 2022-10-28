@@ -16,23 +16,23 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://alineblogg.herokuapp.com/temas', this.token)
+    return this.http.get<Tema[]>('https://brogue.onrender.com/temas', this.token)
   }
 
   getByIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>(`https://alineblogg.herokuapp.com/temas/${id}`, this.token)
+    return this.http.get<Tema>(`https://brogue.onrender.com/temas/${id}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://alineblogg.herokuapp.com/temas', tema, this.token)
+    return this.http.post<Tema>('https://brogue.onrender.com/temas', tema, this.token)
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>('https://alineblogg.herokuapp.com/temas', tema, this.token)
+    return this.http.put<Tema>('https://brogue.onrender.com/temas', tema, this.token)
   }
 
   deleteTema(id: number){
-    return this.http.delete(`https://alineblogg.herokuapp.com/temas/${id}`, this.token)
+    return this.http.delete(`https://brogue.onrender.com/temas/${id}`, this.token)
   }
 
 
