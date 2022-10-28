@@ -15,15 +15,15 @@ export class AuthService {
   ) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('https://alineblogg.herokuapp.com/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://brogue.onrender.com/usuarios/logar', userLogin)
   }
 
   cadastrar(user: User): Observable<User>{
-    return this.http.post<User>('https://alineblogg.herokuapp.com/usuarios/cadastrar', user)
+    return this.http.post<User>('https://brogue.onrender.com/usuarios/cadastrar', user)
   }
 
   getByIdUser(id: number): Observable<User>{
-    return this.http.get<User>(`https://alineblogg.herokuapp.com/usuarios/${id}`)
+    return this.http.get<User>(`https://brogue.onrender.com/usuarios/${id}`)
   }
 
   logado(){
